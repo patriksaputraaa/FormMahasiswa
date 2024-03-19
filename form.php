@@ -28,7 +28,7 @@ class Form{
     }
 
     public function addTextBox($name, $width="50", $default_value=""){
-        $this->kontrol[$name] = $this->textBox($name, $width, $default_value);;
+        $this->kontrol[$name] = $this->textBox($name, $width, $default_value);
     }
 
     private function textBox($name, $width="50", $default_value=""){
