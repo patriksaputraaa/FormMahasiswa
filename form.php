@@ -32,7 +32,7 @@ class Form{
     }
 
     private function textBox($name, $width="50", $default_value=""){
-        $text_box = "<input type='text' size='$width' value='$default_value'>";
+        $text_box = "<input type='text' name='$name'size='$width' value='$default_value'>";
         return $text_box;
     }
 
