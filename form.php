@@ -10,8 +10,8 @@ class Form{
     }
 
     public function show(){
-        echo "<br>\n<form action='$this->action' method='post'>\n</form>";
-        echo "<table border='1'>\n";
+        echo "<br>\n<form action='$this->action' method='post'>\n";
+        echo "<table border=1>\n";
         echo "<caption>\n$this->judul</caption>\n";
         foreach($this->kontrol as $field=>$input){
             echo "<tr>\n";
@@ -25,6 +25,7 @@ class Form{
         echo "</td>\n";
         echo "</tr>\n";
         echo "</table>\n<br>\n";
+        echo "</form>";
     }
 
     public function addTextBox($name, $width="50", $default_value=""){
@@ -56,6 +57,7 @@ class Form{
     public function addCheckBox($names, $values){
         $this->kontrol[$names] = $this->checkBox($names, $values);
     }
+    
 
     private function checkBox($names, $values){
         $check_box = "";

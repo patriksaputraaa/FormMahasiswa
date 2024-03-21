@@ -8,13 +8,13 @@
 <body>
     <?php
     require_once("form.php");
-    $form = new Form("saveMhs.php","Pendaftaran Member Komunitas Pemrograman");
-    $form->addTextBox("Nama Lengkap", 40);
-    $form->addTextBox("Umur", 5);
-    $form->addTextBox("Alamat", 80);
-    $form->addRadioButton("Gender",["Pria","Wanita"]);
-    $form->addComboBox("Agama",["Kristen","Katholik","Islam","Konghucu","Budha","Hindu"], "Islam");
-    $form->addCheckBox("Bidang yang dikuasai",["Mobile Programming","Data Analytics","Web Dev","Database System","UI/UX"]);
+    $form = new Form("saveMhs.php","Pendaftaran Mahasiswa Baru");
+    $form->addTextBox("nis", 20);
+    $form->addTextBox("nama", 80);
+    $form->addRadioButton("gender",["Pria","Wanita"]);
+    $form->addComboBox("agama",["Kristen","Katholik","Islam","Konghucu","Budha","Hindu"], "Islam");
+    $form->addCheckBox("bahasa",["Indonesia","Inggris","Mandarin","Perancis","Jerman"]);
+    $form->addTextBox("kota", 30);
     $form->show();
     ?>
 </body>
