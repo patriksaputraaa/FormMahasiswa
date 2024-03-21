@@ -11,9 +11,9 @@
     $form = new Form("saveMhs.php","Pendaftaran Mahasiswa Baru");
     $form->addTextBox("nis", 20);
     $form->addTextBox("nama", 80);
-    $form->addRadioButton("gender",["Pria","Wanita"]);
+    $form->addRadioButton("gender",["Pria","Wanita"],"Pria");
     $form->addComboBox("agama",["Kristen","Katholik","Islam","Konghucu","Budha","Hindu"], "Islam");
-    $form->addCheckBox("bahasa",["Indonesia","Inggris","Mandarin","Perancis","Jerman"]);
+    $form->addCheckBox("bahasa",["Indonesia","Inggris","Mandarin","Perancis","Jerman"],"");
     $form->addTextBox("kota", 30);
     $form->show();
     ?>
